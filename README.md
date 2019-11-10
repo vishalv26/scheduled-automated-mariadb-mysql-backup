@@ -37,4 +37,4 @@ sudo crontab -e
 In this case it’ll run every day at 8 PM.
 
 # Questions?
-Vishal Vishwakarma <visha@vishalvishwakarma.com>
+Vishal Vishwakarma <vishal@vishalvishwakarma.com>
