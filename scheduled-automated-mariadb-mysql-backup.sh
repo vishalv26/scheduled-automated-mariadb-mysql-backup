@@ -31,7 +31,7 @@ sudo chmod 757 $backup_path
 
 # Dump database into SQL file and Coomprressing to bz2
 echo "2 - Dumping $db_name database..."
-sudo mysqldump --user=$user --password=$password --host=$host $db_name | bzip2 > $backup_path/$db_name-$date.sql.bz2
+sudo mysqldump --single-transaction --user=$user --password=$password --host=$host $db_name | bzip2 > $backup_path/$db_name-$date.sql.bz2
 sleep $sleep_seconds
 
 # Delete files older than $keep_days
